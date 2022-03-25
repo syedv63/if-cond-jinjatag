@@ -8,14 +8,16 @@
 </head>
 <body>
     <center>
-        <h1>if conditions using the jinja tags</h1>
+        <h1>if- elif conditions using the jinja tags</h1>
         {% if a > b %}
           <h2>print a is greater</h2>
+        {% elif b > a  %}
+          <h2>print b is greater </h2>
         {% else %}
-          <h2>print b is greater</h2>
+           <h2>a is equals to b </h2>
         {% endif %}
     </center>
 
     
 </body>
-</html>
+</html> 
