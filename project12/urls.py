@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from app1.views import conditions
+from app1.views import conditions,loops
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('conditions/',conditions,name='conditions'),
+    path('loops/',loops,name='loops'),
+    
 ]
 
