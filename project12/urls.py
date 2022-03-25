@@ -19,6 +19,6 @@ from app1.views import conditions
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('condition/',conditions,name='conditions'),
+    path('conditions/',conditions,name='conditions'),
 ]
 
