@@ -8,14 +8,23 @@
 </head>
 <body>
     <center>
-        <h1>if- elif conditions using the jinja tags</h1>
+        <h1>NESTED-IF conditions</h1>
+
         {% if a > b %}
-          <h2>print a is greater</h2>
-        {% elif b > a  %}
-          <h2>print b is greater </h2>
+           {% if a > c %}
+              <h2>print a is greater </h2>
+            {% else %}
+               <h2>print c is greater</h2>
+            {% endif %}
         {% else %}
-           <h2>a is equals to b </h2>
+            {% if b > c %}
+               <h2>b is greater </h2>
+            {% else %}
+               <h2> c is greater</h2>
+            {% endif %}
         {% endif %}
+
+        
     </center>
 
     
